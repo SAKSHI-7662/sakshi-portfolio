@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshi - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">SAKSHI</div>
+        <div class="menu-btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="chat-btn">Let's chat</button></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="welcome-text">WEL-COME TO MY WORLD!!</p>
+                <h1>Hi, I'm Sakshi</h1>
+                <p class="hero-description">
+                    Take a journey through my professional story and see how I turn ideas into reality, 
+                    Let's create something amazing together.
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn primary-btn">Hire Me Now!</button>
+                    <a href="https://drive.google.com/file/d/1XWNf_5RwBtJ3-0wFnkudYElMXYeLpCvG/view?usp=drivesdk" 
+                       class="btn secondary-btn" target="_blank">
+                        Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/sakshi_7662?igsh=amkxdTYyZ2t5ejZs" target="_blank" class="social-icon" aria-label="Instagram">
+                        <img src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-395.jpg" alt="Instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/shinde-sakshi-4b249a332" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhFnGWLjU339zocqVI0e96ZgsKUCIuOhdg6g&s" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/SAKSHI-7662"target="_blank" class="social-icon" aria-label="GitHub">
+                        <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub">
+                    </a>
+                    <a href="#"target="_blank" class="social-icon" aria-label="Twitter">
+                        <img src="https://e7.pngegg.com/pngimages/708/311/png-clipart-twitter-twitter-thumbnail.png" alt="Twitter">
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.redd.it/r7ouz2q6y6k51.jpg" alt="Sakshi's Profile Picture">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <img src="https://media.istockphoto.com/id/1266313875/vector/laptop-in-doodle-style-design-element-on-the-theme-remote-office-business-school-and-online.jpg?s=612x612&w=0&k=20&c=-pSXfpQAoWGgs8JNlr0d7QAJq1ITXLRx9AeSYVQFhqY=" style=" border: 1px solid whitesmoke;" alt="About Me" class="about-image">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm currently pursuing Second Year of BCS(Computer Science) at New Art's Commerce 
+                        and Science College of Shevgaon from Savitribai Phule Pune University. I completed 
+                        My Programming and Java Course and Data Structure using C and C Programming Language, 
+                        currently I am Learning Advance Java.
+                    </p>
+                    <p>
+                        I believe in continuous learning and collaboration, always staying updated with 
+                        the latest trends and technologies. Let's connect and create something exceptional together!
+                    </p>
+                    <div class="tabs">
+                        <div class="tab-buttons">
+                            <button class="tab-btn active" data-tab="skills">Skills</button>
+                            <button class="tab-btn" data-tab="experience">Experience</button>
+                            <button class="tab-btn" data-tab="education">Education</button>
+                        </div>
+                        <div class="tab-content active" id="skills">
+                            <ul>
+                                <li>Java Programming</li>
+                                <li>JavaScript</li>
+                                <li>C Programming</li>
+                                <li>Data Structures</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="experience">
+                            <ul>
+                                <li>Three Star in Java and Two Star in C Language in HackerRank</li>
+                                <li>Learning Advance Java</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="education">
+                            <ul>
+                                <li>Second Year BCS(Computer Science)</li>
+                                <li>First Year BCS(Computer Science) from Savitribai Phule Pune University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" onsubmit="emailSent(); reset(); return false;">
+    
+
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+  
+
+    <script src="main.js"></script>
+</body>
+</html>
